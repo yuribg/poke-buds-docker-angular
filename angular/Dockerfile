@@ -12,11 +12,11 @@ WORKDIR /project
 # Install all the dependencies
 RUN npm install -g @angular/cli@latest
 
-COPY package.json package-lock.json ./
+COPY **/package.json **/package-lock.json ./
 RUN npm ci
 
 # Generate the build of the application
-RUN ng build
+RUN npm run build
 
 # Add the source code to app
 COPY . .
