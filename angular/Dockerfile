@@ -16,11 +16,10 @@ COPY **/package.json **/package-lock.json ./
 RUN npm ci
 
 # Generate the build of the application
-RUN npm run build
+RUN cd angular | ng build
 
 # Add the source code to app
 COPY . .
-CMD ["ng", "serve", "--host", "0.0.0.0"]
 
 # FROM builder as dev-envs
 # 
