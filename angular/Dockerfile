@@ -46,7 +46,7 @@ CMD ["ng", "serve", "--host", "0.0.0.0"]
 FROM nginx:latest
 
 # Copy the build output to replace the default nginx contents.
-COPY ./dist/angular /usr/share/nginx/html
+COPY /project/dist/angular /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
