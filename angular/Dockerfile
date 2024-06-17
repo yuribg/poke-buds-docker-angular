@@ -6,8 +6,8 @@
 FROM --platform=$BUILDPLATFORM node:current-bullseye-slim as builder
 
 # Set the working directory
-RUN mkdir /project
-WORKDIR /project
+# RUN mkdir /usr/local/app
+WORKDIR /usr/local/app
 
 # Install all the dependencies
 RUN npm install -g @angular/cli@latest
