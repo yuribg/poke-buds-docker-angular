@@ -3,7 +3,7 @@
 # Stage 1: Compile and Build angular codebase
 
 # Use official node image as the base image
-FROM --platform=$BUILDPLATFORM node:17.0.1-bullseye-slim as builder
+FROM --platform=$BUILDPLATFORM node:current-bullseye-slim as builder
 
 # Set the working directory
 RUN mkdir /project
