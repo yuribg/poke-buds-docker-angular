@@ -22,8 +22,8 @@ RUN npm run build
 COPY . .
 CMD ["ng", "serve", "--host", "0.0.0.0"]
 
-FROM builder as dev-envs
-
+# FROM builder as dev-envs
+# 
 # RUN <<EOF
 # apt-get update
 # apt-get install -y --no-install-recommends git
