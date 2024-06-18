@@ -1,3 +1,6 @@
+# https://www.programonaut.com/how-to-deploy-a-docker-image-to-a-server-using-github-actions/
+# https://www.youtube.com/watch?v=f5AlQE0i5m0
+
 name: publish
 
 on:
